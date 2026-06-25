@@ -1,0 +1,32 @@
+# Normalize line endings: store as LF in the repo, check out as LF everywhere
+# (overrides core.autocrlf on Windows and silences the LF/CRLF warnings).
+* text=auto eol=lf
+
+# Explicit text types
+*.ts      text
+*.tsx     text
+*.js      text
+*.mjs     text
+*.cjs     text
+*.json    text
+*.css     text
+*.html    text
+*.md      text
+*.svg     text
+*.yml     text
+*.yaml    text
+
+# Binary types — never normalize
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.pdf     binary
+*.woff    binary
+*.woff2   binary
+*.ttf     binary
+*.otf     binary
+
+# GitHub language stats: don't count vendored/reference material
+reference/** linguist-documentation
