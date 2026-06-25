@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-ink antialiased;
+}
+
+/* Subtle checkerboard behind the PDF canvas so page edges read clearly. */
+.canvas-backdrop {
+  background-color: #eef1f6;
+  background-image:
+    linear-gradient(45deg, #e6eaf1 25%, transparent 25%),
+    linear-gradient(-45deg, #e6eaf1 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e6eaf1 75%),
+    linear-gradient(-45deg, transparent 75%, #e6eaf1 75%);
+  background-size: 22px 22px;
+  background-position: 0 0, 0 11px, 11px -11px, -11px 0;
+}
+
+/* Hide scrollbars on the thumbnail rail but keep scrolling. */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-pop-in {
+  animation: pop-in 0.16s ease-out;
+}

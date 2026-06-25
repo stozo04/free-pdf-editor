@@ -1,0 +1,14 @@
+/node_modules
+/.next
+/out
+/build
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+/public/pdf.worker.min.mjs
+/public/fixtures
+/fixtures
+.env*
+
+# Proprietary iLovePDF capture — reference-only, do NOT publish (copyright).
+/reference/ilovepdf-capture/
