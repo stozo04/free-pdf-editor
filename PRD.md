@@ -76,8 +76,7 @@ edited. Matching Apryse pixel-for-pixel on every document is a non-goal.
 ## 6. Tech stack
 
 - **Framework:** Next.js (App Router) + React + TypeScript.
-- **Styling:** Tailwind CSS. Use the **`frontend-design` skill** for the visual
-  polish pass.
+- **Styling:** Tailwind CSS. Follow the local visual and accessibility requirements in Section 9 for the polish pass.
 - **PDF render + text layer:** `pdfjs-dist` (pdf.js).
 - **PDF write-back:** `pdf-lib` (and `@pdf-lib/fontkit` for custom font
   embedding). Use pdf-lib for whiteout rectangles, drawing replacement text,
@@ -224,8 +223,7 @@ Match the **clean & friendly (Smallpdf-like)** vibe and the anatomy in
   Verdana, Comic Sans MS** (regular/bold/italic), matching iLovePDF's set.
 - **Accessibility:** keyboard operable, visible focus states, sufficient
   contrast, alt text on icons/buttons.
-- Use the **`frontend-design` skill** to make it distinctive and polished, not
-  generic.
+- Apply the layout, typography, responsive, and accessibility requirements above during the visual polish pass.
 
 ## 10. Build order (suggested milestones)
 
