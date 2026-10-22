@@ -23,7 +23,7 @@ focused only on the edit experience. See `PRD.md` for the full product spec and
 
 ## Tech stack
 
-- **Next.js 14** (App Router) + **React 18** + **TypeScript**
+- **Next.js 15** (App Router) + **React 19** + **TypeScript**
 - **Tailwind CSS**
 - **pdf.js** (`pdfjs-dist`) — rendering, text-layer extraction, form-widget
   detection. Worker served from `/public/pdf.worker.min.mjs`.

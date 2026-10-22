@@ -27,7 +27,7 @@ node scripts/copy-pdf-worker.mjs     # manually copy the pdf.js worker into /pub
 
 ## Tech stack
 
-Next.js 14 (App Router) · React 18 · TypeScript · Tailwind · `pdfjs-dist` (render
+Next.js 15 (App Router) · React 19 · TypeScript · Tailwind · `pdfjs-dist` (render
 + text layer + form detection) · `pdf-lib` + `@pdf-lib/fontkit` (write-back +
 flatten) · `signature_pad` · `zustand` (state + undo/redo).
 
@@ -65,7 +65,7 @@ src/store/editorStore.ts      zustand store: document, annotations, formValues, 
   (regression we already fixed). Export uses pdf-lib StandardFonts (WinAnsi), so
   text is run through `sanitizeForWinAnsi()` to avoid encoding throws.
 - **StrictMode:** `editor/page.tsx` runs its parse exactly once via a ref guard and
-  intentionally does **not** abort on effect cleanup — otherwise React 18 dev
+  intentionally does **not** abort on effect cleanup — otherwise React dev
   StrictMode's double-invoke discards the in-flight parse and the spinner hangs.
 
 ## Known limitation (by design)
